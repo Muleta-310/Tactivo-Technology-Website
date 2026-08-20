@@ -914,20 +914,20 @@ img {
 }
 .quality-grid {
   display: grid;
-  grid-template-columns: 0.8fr 0.9fr 1.1fr;
+ grid-template-columns: 0.9fr 1.1fr;
   gap: 60px;
   align-items: center;
 }
 .quality-photo {
-  height: 270px;
+  height: auto;
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--surface-2);
 }
 .quality-photo img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   filter: saturate(0.82);
 }
 .quality-mosaic {
