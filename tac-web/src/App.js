@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react';
-import { ArrowUpRight, Camera, ChevronLeft, ChevronRight, Clock3, Fuel, Menu, Moon, Network, ShieldCheck, Sun, X } from 'lucide-react';
+import { ArrowUpRight, Camera, ChevronLeft, ChevronRight, Clock3, Code2, Fuel, Menu, Moon, Network, ShieldCheck, Sun, X } from 'lucide-react';
 import './App.css';
 
 const services = [
-  ['CCTV surveillance', Camera, 'Site-wide camera coverage with remote monitoring and recording.', '/assets/tactivo-field-operator-supplied.png'],
-  ['Access control', ShieldCheck, 'Secure entry for offices, kiosks, and restricted areas.', '/assets/tactivo-field-operator-supplied.png'],
-  ['Maestro software integration', Fuel, 'Fuel management, reconciliation, and reporting in Maestro.', '/assets/tactivo-field-operator-supplied.png'],
-  ['Network & structured cabling', Network, 'Reliable cabling, wireless links, and site networking.', '/assets/tactivo-field-operator-supplied.png'],
-  ['Support & maintenance', Clock3, 'Planned maintenance and rapid-response support.', '/assets/tactivo-field-operator-supplied.png'],
+  ['CCTV surveillance', Camera, 'Site-wide camera coverage with remote monitoring and recording.', '/assets/tactivo-cctv-surveillance.jpg'],
+  ['Access control', ShieldCheck, 'Secure entry for offices, kiosks, and restricted areas.', '/assets/tactivo-access-control.jpg'],
+  ['Maestro software integration', Fuel, 'Fuel management, reconciliation, and reporting in Maestro.', '/assets/maestro-software-dashboard.jpg'],
+  ['Network & structured cabling', Network, 'Reliable cabling, wireless links, and site networking.', '/assets/tactivo-network-installation.jpg'],
+  ['Customized software development', Code2, 'Tailored solutions that fit your business, built for growth.', '/assets/tactivo-software-development.jpg'],
+  ['Support & maintenance', Clock3, 'Planned maintenance and rapid-response support.', '/assets/tactivo-support-maintenance.jpg'],
 ];
 
 const team = [
@@ -60,7 +61,7 @@ function AboutPage() {
 }
 
 function ServicesPage() {
-  return <main><PageIntro eyebrow="Services" title="Connected systems for sites that keep moving." text="Security, fuelling, networking, and reporting for dependable sites." /><section className="service-visual section"><div className="wrap service-visual-grid"><div className="service-visual-photo"><img src="/assets/tactivo-services-custom.jpg" alt="Integrated fuel-retail controls, network equipment, and monitoring screens" loading="lazy" decoding="async" /></div><div className="section-heading compact"><p className="eyebrow">One operating picture</p><h2>See the signal. Control the detail.</h2><p>One connected view from the pump island to the back office.</p></div></div></section><section className="services section"><div className="wrap"><div className="section-heading compact"><p className="eyebrow">What we do</p><h2>Core services for connected sites.</h2><p>The essentials, clearly delivered.</p></div><div className="services-grid">{services.map(([title, Icon, text, image]) => <article className="service-card" key={title}><div className="service-image"><img src={image} alt="" loading="lazy" decoding="async" width="960" height="640" /></div><div className="service-icon"><Icon size={20} /></div><h3>{title}</h3><p>{text}</p><a className="card-link" href="#contact">Explore service <ArrowUpRight size={14} /></a></article>)}</div></div></section><section className="maestro-section section"><div className="wrap"><div className="section-heading compact"><p className="eyebrow">Maestro ecosystem</p><h2>One suite for clearer operations.</h2><p>Maestro connects software, metering, oversight, and fuel-retail intelligence.</p></div><div className="maestro-grid">{maestroProducts.map(([label, file, text]) => <article key={label}><div className="maestro-logo-frame"><img src={`/assets/${file}.jpeg`} alt={`Maestro ${label} logo`} loading="lazy" /></div><p>{text}</p></article>)}</div></div></section></main>;
+  return <main><PageIntro eyebrow="Services" title="Connected systems for sites that keep moving." text="Security, fuelling, networking, and reporting for dependable sites." /><section className="service-visual section"><div className="wrap service-visual-grid"><div className="service-visual-photo"><img src="/assets/maestro-fuel-automation.jpg" alt="Maestro dashboard overlaid on a fuel-retail forecourt at night" loading="lazy" decoding="async" /></div><div className="section-heading compact"><p className="eyebrow">One operating picture</p><h2>See the signal. Control the detail.</h2><p>One connected view from the pump island to the back office.</p></div></div></section><section className="services section"><div className="wrap"><div className="section-heading compact"><p className="eyebrow">What we do</p><h2>Core services for connected sites.</h2><p>The essentials, clearly delivered.</p></div><div className="services-grid">{services.map(([title, Icon, text, image]) => <article className="service-card" key={title}><div className="service-image"><img src={image} alt="" loading="lazy" decoding="async" width="960" height="640" /></div><div className="service-icon"><Icon size={20} /></div><h3>{title}</h3><p>{text}</p><a className="card-link" href="#contact">Explore service <ArrowUpRight size={14} /></a></article>)}</div></div></section><section className="maestro-section section"><div className="wrap"><div className="section-heading compact"><p className="eyebrow">Maestro ecosystem</p><h2>One suite for clearer operations.</h2><p>Maestro connects software, metering, oversight, and fuel-retail intelligence.</p></div><div className="maestro-grid">{maestroProducts.map(([label, file, text]) => <article key={label}><div className="maestro-logo-frame"><img src={`/assets/${file}.jpeg`} alt={`Maestro ${label} logo`} loading="lazy" /></div><p>{text}</p></article>)}</div></div></section></main>;
 }
 
 function ProjectsPage() {
