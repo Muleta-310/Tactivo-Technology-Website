@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
-import { ArrowUpRight, Camera, ChevronLeft, ChevronRight, Clock3, Code2, Fuel, Menu, Moon, Network, ShieldCheck, Sun, X } from 'lucide-react';
+import { ArrowUpRight, Camera, ChevronLeft, ChevronRight, Clock3, Code2, Fuel, Gauge, Menu, Moon, Network, Satellite, ShieldCheck, Sun, X } from 'lucide-react';
 import './App.css';
 
 const services = [
   ['CCTV surveillance', Camera, 'Site-wide camera coverage with remote monitoring and recording.', '/assets/tactivo-cctv-surveillance.jpg'],
   ['Access control', ShieldCheck, 'Secure entry for offices, kiosks, and restricted areas.', '/assets/tactivo-access-control.jpg'],
   ['Maestro software suite', Fuel, 'Fuel management, reconciliation, and reporting in Maestro.', '/assets/maestro-software-dashboard.jpg'],
+  ['Telematics', Satellite, 'Real-time GPS tracking, vehicle health, and driver behaviour across your fleet.', '/assets/tactivo-telematics.jpg'],
+  ['Fuel automation', Gauge, 'Automated dispensing, tank monitoring, and loss prevention for your forecourt.', '/assets/tactivo-fuel-automation.jpg'],
   ['Network & structured cabling', Network, 'Reliable cabling, wireless links, and site networking.', '/assets/tactivo-network-installation.jpg'],
   ['Customized software development', Code2, 'Tailored solutions that fit your business, built for growth.', '/assets/tactivo-software-development.jpg'],
   ['Support & maintenance', Clock3, 'Planned maintenance and rapid-response support.', '/assets/tactivo-support-maintenance.jpg'],
