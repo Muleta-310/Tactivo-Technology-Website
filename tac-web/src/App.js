@@ -5,7 +5,7 @@ import './App.css';
 const services = [
   ['CCTV surveillance', Camera, 'Site-wide camera coverage with remote monitoring and recording.', '/assets/tactivo-cctv-surveillance.jpg'],
   ['Access control', ShieldCheck, 'Secure entry for offices, kiosks, and restricted areas.', '/assets/tactivo-access-control.jpg'],
-  ['Maestro software integration', Fuel, 'Fuel management, reconciliation, and reporting in Maestro.', '/assets/maestro-software-dashboard.jpg'],
+  ['Maestro software suite', Fuel, 'Fuel management, reconciliation, and reporting in Maestro.', '/assets/maestro-software-dashboard.jpg'],
   ['Network & structured cabling', Network, 'Reliable cabling, wireless links, and site networking.', '/assets/tactivo-network-installation.jpg'],
   ['Customized software development', Code2, 'Tailored solutions that fit your business, built for growth.', '/assets/tactivo-software-development.jpg'],
   ['Support & maintenance', Clock3, 'Planned maintenance and rapid-response support.', '/assets/tactivo-support-maintenance.jpg'],
